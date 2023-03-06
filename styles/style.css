@@ -59,40 +59,49 @@ header nav a:hover {
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
     margin-bottom: 50px;
 }
 
-main ul {
-    display: flex;
-    justify-content: center;
+.latest-products {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.latest-products ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0;
     padding: 0;
 }
 
-main ul li {
-    list-style: none;
-    background-color: rgb(235, 204, 165);
-    color: #2b2b2b;
-    font-size: 16px;
-    margin: 30px;
-    padding-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-main img {
-    width: 370px;
+.food-item img {
     height: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
-.info {
+.food-item {
+    list-style: none;
+    background-color: rgb(228, 206, 182);
+    color: #2b2b2b;
+    font-size: 14px;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
     text-align: center;
 }
 
-.info a {
+.btn {
     color: white;
     background-color: rgb(220, 147, 12);
     border-radius: 8px;
     padding: 6px 15px;
+}
+
+.btn:hover {
+    background-color: chartreuse;
+    color: #2b2b2b;
 }
